@@ -39,6 +39,9 @@ set(ENGINE_SOURCES
     engine_main.c
 	engine.c
 	engine.h
+	
+	core/reflection.c
+	core/reflection.h	
 )
 
 add_executable(engine

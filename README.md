@@ -8,50 +8,50 @@
 ## Repository Root
 
 ```
-	/engine/         		# Core runtime systems (data processors)
-	/game/                  # Gameplay framework (data orchestrators)
-	/editor/                # Tooling built on engine + game
-	/projects/         		# Actual user/game projects
-	/tools/                 # Standalone utility executables
+/engine/         		# Core runtime systems (data processors)
+/game/                  # Gameplay framework (data orchestrators)
+/editor/                # Tooling built on engine + game
+/projects/         		# Actual user/game projects
+/tools/                 # Standalone utility executables
 	
 ```
 
 ## Engine Folder (Cook: Data Processing)
 
 ```
-    engine/
-      core/
-        memory.h/.c         # Allocators, pools, arenas
-        threading.h/.c      # Threading, jobs, fibers
-        logging.h/.c        # Logging and diagnostics
-        serialization.h/.c  # Binary/JSON/TOML serializer
-        reflection.h/.c     # Runtime type info
-    
-      platform/
-        input.h/.c          # Keyboard, mouse, controller
-        window.h/.c         # Window/context creation
-        fs.h/.c             # Filesystem abstraction
-        net.h/.c            # Socket layer, transport
-    
-      systems/
-        render/
-          renderer.h/.c     # Render API abstraction (Vulkan/GL/DX)
-          mesh.h/.c         # Vertex/index buffer handling
-          shader.h/.c       # Shader modules
-          texture.h/.c      # Texture formats
-        audio/
-          mixer.h/.c        # DSP mixer, spatialization
-          stream.h/.c       # Audio buffer streaming
-        physics/
-          physics.h/.c      # Physics solver interface
-          collision.h/.c    # Collision mesh/shape handling
-        animation/
-          anim_runtime.h/.c # Skeleton, blend trees, IK solvers
-    
-      runtime/
-        module.h/.c         # Module/plugin loader
-        resource.h/.c       # Resource manager (engine-level)
-        engine_main.c       # engine.exe entry point
+engine/
+  core/
+    memory.h/.c         # Allocators, pools, arenas
+    threading.h/.c      # Threading, jobs, fibers
+    logging.h/.c        # Logging and diagnostics
+    serialization.h/.c  # Binary/JSON/TOML serializer
+    reflection.h/.c     # Runtime type info
+
+  platform/
+    input.h/.c          # Keyboard, mouse, controller
+    window.h/.c         # Window/context creation
+    fs.h/.c             # Filesystem abstraction
+    net.h/.c            # Socket layer, transport
+
+  systems/
+    render/
+      renderer.h/.c     # Render API abstraction (Vulkan/GL/DX)
+      mesh.h/.c         # Vertex/index buffer handling
+      shader.h/.c       # Shader modules
+      texture.h/.c      # Texture formats
+    audio/
+      mixer.h/.c        # DSP mixer, spatialization
+      stream.h/.c       # Audio buffer streaming
+    physics/
+      physics.h/.c      # Physics solver interface
+      collision.h/.c    # Collision mesh/shape handling
+    animation/
+      anim_runtime.h/.c # Skeleton, blend trees, IK solvers
+
+  runtime/
+    module.h/.c         # Module/plugin loader
+    resource.h/.c       # Resource manager (engine-level)
+    engine_main.c       # engine.exe entry point
 
 
 ```
